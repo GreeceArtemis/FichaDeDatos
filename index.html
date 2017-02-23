@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ficha de Datos</title>
+</head>
+<body>
+  <title><h1>Ficha de Datos</h1></title>
+  <form action="">
+  <p>Ingrese tu nombre: <input id="name" type="text"required="required"></p>
+  <p>Ingrese tu apellido: <input id="lastName" type="text"required></p>
+  <p>Ingrese tu DNI: <input id="dni" type="text" pattern="^[9]\d{7}$"></p>
+  <p>Ingrese tu dirección: <input id="address" type="text"required></p>
+
+  <button type="button" onclick="sendDate()">Enviar</button>
+</form>
+  <script src="assets/js/main.js">  </script>
+  <ul id="datos">
+  </ul>
+</body>
+</html>
