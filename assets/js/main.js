@@ -1,6 +1,6 @@
 
 
-function sendDate(name,lastName,dni,address){
+function sendDate(){
   var name=document.getElementById("name").value;
   var lastName=document.getElementById("lastName").value;
   var dni=document.getElementById("dni").value;

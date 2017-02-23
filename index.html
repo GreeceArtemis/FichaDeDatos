@@ -8,16 +8,18 @@
 </head>
 <body>
   <title><h1>Ficha de Datos</h1></title>
-  <form action="">
+  <form onsubmit="sendDate(); return false;">
   <p>Ingrese tu nombre: <input id="name" type="text"required="required"></p>
   <p>Ingrese tu apellido: <input id="lastName" type="text"required></p>
-  <p>Ingrese tu DNI: <input id="dni" type="text" pattern="^[9]\d{7}$"></p>
+  <p>Ingrese tu DNI: <input id="dni" type="text" pattern="^[0-9]{8}" required></p>
   <p>Ingrese tu dirección: <input id="address" type="text"required></p>
 
-  <button type="button" onclick="sendDate()">Enviar</button>
+  <button>Enviar</button>
+
 </form>
-  <script src="assets/js/main.js">  </script>
-  <ul id="datos">
-  </ul>
+  <div>
+  <ul id="datos"></ul>
+  </div>
+    <script src="assets/js/main.js">  </script>
 </body>
 </html>
